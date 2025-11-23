@@ -1,181 +1,93 @@
-# mks-Bauteil
-
-![Bauteil](./bauteil.png)
-
-
-## Beschreibung
-
-kurz-Beschreibung
-
-## Anschlüsse
-
-### Eingang
-
--   I2C
-
-### Ausgang
-
--   High Power / High Voltage
-
-## Kurz-Datenblatt
-
--   Signal Eingang: 3-5V
--   Betriebsspannung: 5-12V
--   Ausgang Strom Max: 2A
-
-## Siehe Auch
-
--   falls vorhanden link zu anderem Bauteil / zugehörigem part
-
-
-
-## library
-um dieses Bauteil zu benutzen verwende / installiere bitte diese Library: LibraryName
-<!-- TODO: CONTENT change library name -->
-
-## Beispiel
-
-schau dir das Minimal-Beispiel an:
-<!-- TODO: ARCHITECTURE include example *_minimal.ino-->
-
-## Anleitung
-
-<!-- TODO: CONTENT change guide -->
-- nimm Bauteil
-- Schließe an Port D2 an
-- nehm Beispiel Code 
-    - kopiere von hier drüber
-    - oder direkt in der Arduino IDE: 
-        `Datei-Beispiele-MakeYourSchool-FunktionsNamen-BauteilNamen-Minimal`
-- Sketch Hochladen
-- Das Sollte nun passieren:
-    - die LED Blinkt im 1 Sekunden Takt
-
-
-
-
-
-
 ---
-title: 'mks-Bauteil'
-date: '2025-10-01T13:43:35.000Z'
+title: 'Arduino UNO'
+date: '2018-08-16T19:55:36.000Z'
 tags:
-    - 'sensor'
-    - 'input'
-    - 'taster'
-    - 'schalter'
-    - 'output'
-    - 'aktuator'
-    - 'motor'
-coverImage: './bauteil.png'
-material_number: ''
-material_type: 'sensor'
-manufacture: 'generic'
-repo_name: 'mks-generic-Endschalter'
-product_url: 'https://www.reichelt.de/de/de/shop/kategorie/schnappschalter_endschalter-7599'
-clone_url: 'https://github.com/Make-Your-School/mks-generic-Endschalter.git'
+    - 'controller'
+coverImage: '1_arduino.png'
+material_number: '1'
+material_type: 'controller'
+material_short_descr: 'Arduino UNO R4 WiFi'
+manufacture: 'Arduino'
+manufacture_url: 'https://arduino.cc/'
+repo_name: 'mks-Arduino-UNO_R4_WiFi'
 repo_prefix: 'mks'
-repo_part: 'Endschalter'
-embedded_example_file: 'examples/BauteilTemplate_minimal/BauteilTemplate_minimal.ino'
+repo_manufacture: 'Arduino'
+repo_part: 'UNO_R4_WiFi'
+product_url: 'https://store.arduino.cc/products/uno-r4-wifi'
+clone_url: 'https://github.com/Make-Your-School/mks-Arduino-UNO_R4_WiFi.git'
+embedded_example_file: 'examples/UNO_R4_WiFi_minimal/UNO_R4_WiFi_minimal.ino'
+status: 'active'
+difficulty: 'recommend'
 ---
 
-# Endschalter/Anschlag
+# Arduino UNO R4 WiFi
 
-![Endschalter/Anschlag](./mys_mk_25.png)
-<!-- TODO: CONTENT change image -->
-<!-- TODO: ARCHITECTURE multiple images? -->
-<!-- do we need multiple images per part?-->
-<!-- and if do we need a slider? -->
+![Arduino UNO R4 WiFi](./bauteil.png)
 
 ## Beschreibung
 
-Der Endschalter funktioniert wie ein normaler Schalter und kann als Eingabe für einen Mikrocontroller verwendet werden. 
-Der Schalter besitzt einen elastischen Schaltarm, der einen elektrischen Kontakt zwischen den Anschlusspins herstellt, wenn der Arm gedrückt wird.
+Der Arduino UNO ist ein Mikrocontroller der es ermöglicht, prinzipiell jegliche Art von technischen Vorgängen automatisiert miteinander zu koordinieren. 
+Dafür besitzt der Mikrocontroller viele Ein- und Ausgänge (Inputs und Outputs). 
+Diese sind elektrische Anschlüsse, an die verschiedene technische Komponenten, wie Sensoren oder auch Aktoren (Motoren, Leuchten etc.), angeschlossen werden können. 
+Wird der Mikrocontroller entsprechend programmiert, können diese Komponenten logisch miteinander verknüpft werden. 
+Dadurch können die Komponenten gemeinsam eine technische Aufgabe erfüllen.
 
 <!-- more_details -->
 
-Der Schalter kann an einen Arduino oder Raspberry Pi angeschlossen werden und benötigt nur einen digitalen Pin.
+Der Arduino wird über die Arduino IDE (Entwicklungsumgebung) frei nach eigenen Wünschen und Anforderungen programmiert. 
+Dazu wird er an einem PC mit der entsprechenden vorinstallierten Software angeschlossen und das Programm „Arduino IDE” gestartet. 
+Das final erstellte Programm wird schließlich auf den Mikrocontroller geladen.
 
-Um den Schaltvorgang mit einem Mikrocontroller zu erfassen, wird ein digitaler Pin des Controllers mit der einen Seite des Schalters verbunden.
-der zweite Anschluss mit Masse / GND.
-In *ruhe* wird er Pin im inneren des Controllers *auf VCC gezogen*  (beim Arduino +5V). 
-Dies geschieht über einen internen zuschaltbaren hochohmigen Widerstand. `Pull-Up` genannt.
-Sobald der Schalter betätigt wird, fließt ein ganz kleiner Strom zu Masse.
-Damit wird nun der Pin des Controllers *auf Masse gezogen*.
-und genau diesen Unterschied kann der Controller erfassen.
+Ein simples Projektbeispiel ist eine Leuchte, die immer dann aufleuchtet, wenn die Umgebung zu dunkel wird. 
+Hierfür wird ein Lichtsensor benötigt, um das Umgebungslicht zu messen. 
+Der Arduino liest den Sensor aus und steuert schließlich die Leuchte, abhängig von der gemessenen Helligkeit.
 
-Der Endschalter kommt vor allem bei Robotern oder anderen bewegten Maschinen zum Einsatz, um Kollisionen zu erkennen und zu vermeiden. 
-Dafür wird beispielsweise ein Endschalter am Ende einer Schiene platziert, auf der ein Laufwagen läuft. 
-Kommt der Laufwagen zu nah an das Ende der Schiene, kollidiert er mit dem Schaltarm des Endschalters und betätigt ihn somit. 
-So wird die bevorstehende Kollision erkannt und kann vermieden werden.
+Durch die große Beliebtheit des Arduino in der wachsenden Community lässt sich fast jedes erdenkliche Projekt mithilfe von im Internet veröffentlichten Erfahrungsberichten umsetzen. 
+Es reicht oftmals nur die Komponenten, die man verbinden möchte, in eine Suchmaschine einzugeben, um entsprechende (Video-)Tutorials zu finden.
 
+Der Arduino UNO ist ein Mikrocontroller, der ursprünglich speziell für Bildungszwecke entwickelt wurde. 
+Durch die einfache Programmierung und den niedrigen Preis hat er allerdings sehr schnell auch in anderen Branchen an Beliebtheit gewonnen. 
+Sowohl Wissenschaftler\*innen als auch Studierende, Hobby-Bastler\*innen, DIY-Begeisterte und viele mehr setzen den Mikrocontroller ein, um unterschiedlichste automatisierte Projekte umzusetzen.
 
-## Anschlüsse
+### UNO R4 WiFi
 
-### Eingang
-
--   Mechanische Betätigung
-
-### Ausgang
-
--   3 Kontakte (NC-C-NO)
-    -   C = Common (gemeinsamer Anschluss)
-    -   NC = Normal Closed (im ungedürckten zustand mit C verbunden)
-    -   NO = Normal Open (im gedürckten zustand mit C verbunden)
-
-## Kurz-Datenblatt
-
--   Schaltleistung: 5A 125VAC
-
-[Hersteller Datenblatt](https://asset.conrad.com/media10/add/160267/c1/-/de/000707243DS01/datenblatt-707243-hartmann-mikroschalter-mbb1-01-a-01-c-09-a-250-vac-5-a-1-x-einein-tastend-1-st.pdf)
+Der `Arduino UNO R4 WiFi` ist in vielen punkten ein deutliches Upgraded zum bisher verfügbaren `Arduino UNO R3`.
+- schnellerer Prozessor
+- mehr Speicher
+- 12x8 rote LEDs um einfache dinge anzuzeigen
+- WiFi (WLAN) direkt integriert
+- USB-HID (der Arduino kann so tun als ob er eine Tastatur oder Maus ist..)
 
 
-## Siehe Auch
 
--   -
+### Videos
 
-## library
+@[youtube](https://www.youtube.com/watch?v=GQw20v8Qls0)
 
-keine library nötig.
-
-## Beispiel
-
-schau dir das Minimal-Beispiel an:
-
-```c++:./examples/Endschalter_minimal/Endschalter_minimal.ino
-// this should be overwritten!
-```
-
-## Anleitung
-
--   schließe den Endschalter wie folgt an:
-    -   C an GND
-    -   NO an D2
--   nehm Beispiel Code
-    -   kopiere von hier drüber in neuen leeren arduino sketch
-    -   oder direkt über das Menü der Arduino IDE \*1:
-        `Datei-Beispiele-MakeYourSchool-Taster-Endschalter-Endschalter_Minimal`
--   Sketch Hochladen
--   Das Sollte nun passieren:
-    -   Öffne den Serial-Monitor (Symbol ganz rechts oben in der IDE)
-    -   Wenn du nun den Endschalter drückst sollte `Endschalter wurde gerade gedrückt!` angezeigt werden.
-    -   Wenn du ihn wieder los lässt sollte `Endschalter wurde wieder geöffnet` angezeigt werden.
-
-\*1: dafür musst du einmalig die `MakeYourSchool` library installiert haben.
-diese bringt alle hier im system vorhandenen Beispielcodes in die IDE..
+@[youtube](https://www.youtube.com/watch?v=EEa-0fhb2WA)
 
 
+## Beispiele
+
+!!!show-examples:./examples/
+
+<!-- infolist -->
 
 ## Wichtige Links für die ersten Schritte:
 
-- [Datenblatt](https://asset.conrad.com/media10/add/160267/c1/-/de/000707243DS01/datenblatt-707243-hartmann-mikroschalter-mbb1-01-a-01-c-09-a-250-vac-5-a-1-x-einein-tastend-1-st.pdf)
+- [Arduino Webseite](https://www.arduino.cc/)
+- [Arduino IDE](https://www.arduino.cc/en/Main/Software)
+- [Technische Daten zum Arduino UNO](https://store.arduino.cc/products/uno-r4-wifi)
+- [Programmiersprache](https://docs.arduino.cc/language-reference/de/)
+- [Instructables Arduino Class (englisch)](https://www.instructables.com/class/Arduino-Class/)
 
 ## Projektbeispiele:
 
-- [Kameraslider mit Endschalter](http://hmr-video.de/slider.html)
+- [Arduino Project HUB (englisch)](https://create.arduino.cc/projecthub)
+- [Hackster (englisch)](https://www.hackster.io/arduino/projects)
+- [Arduino Tutorial (deutsch)](https://www.arduino-tutorial.de/arduino-projekte/)
 
 ## Weiterführende Hintergrundinformationen:
 
-- [Schalter](<https://de.wikipedia.org/wiki/Schalter_(Elektrotechnik)>) [(Elektrotechnik)](<https://de.wikipedia.org/wiki/Schalter_(Elektrotechnik)>) [- Wikipedia Artikel](<https://de.wikipedia.org/wiki/Schalter_(Elektrotechnik)>)
-- [Positionsschalter - Wikipedia Artikel](https://de.wikipedia.org/wiki/Positionsschalter)
-- [GPIO - Wikipedia Artikel](https://de.wikipedia.org/wiki/Allzweckeingabe/-ausgabe)
+- [Arduino - Wikipedia Artikel](https://de.wikipedia.org/wiki/Arduino_(Plattform))
+- [Mikrocontroller - Wikipedia Artikel](https://de.wikipedia.org/wiki/Mikrocontroller)
