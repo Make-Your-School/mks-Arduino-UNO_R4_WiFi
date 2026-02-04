@@ -108,7 +108,7 @@ void checkEmpfang() {
         Serial.print(value);
         Serial.print("'");
         Serial.println();
-        analogWrite(outputPin, value);
+        analogWrite(outputPin, map(value, 0, 99, 0, 255));
         matrix.beginDraw();
         matrix.clear();
         matrix.text(packetBuffer, 0, 0);
