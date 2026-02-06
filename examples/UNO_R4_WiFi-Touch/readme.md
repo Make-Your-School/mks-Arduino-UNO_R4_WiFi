@@ -17,14 +17,15 @@ Dieses Beispiel zeigt dir wie das geht.
 
 ### Sensor Verhalten
 
-- ändere die Sensorflächen größe
-- probiere aus wie sich die Fläche / Form zu den Sensor-Werten verhält
-- Verschiedene Materialien testen
+- probiere aus wie sich die verschiedenen Eigenschaften des Sensor auf die Werte auswirken
+    - Fläche
+    - Form
+    - Materia
+    - Abstände
 
 ### Mehrere Sensoren
 
 Schließe mehrere Sensor-Flächen an.
-
 
 ## weitere Informationen
 
