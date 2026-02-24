@@ -10,7 +10,7 @@ Es gibt auch jeweils einen passenden Beispiel-Sketch dafür.
 Du benötigst keine externen Bauteile.
 
 - Lade den Sketch hoch.
--Wenn der Sender eine Information sendet, wird die On-Board-LED entsprechend angepasst.
+- Wenn der Sender eine Information sendet, wird die On-Board-LED entsprechend angepasst.
 
 
 ## Weitere Informationen
