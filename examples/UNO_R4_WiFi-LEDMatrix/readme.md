@@ -9,7 +9,7 @@ Du benötigst keine externen Bauteile.
 
 ## Aufgabe
 
-- Ändere die Animation.
+### Ändere die Animation.
 
 Viele verschiedene vordefinierte Animationen findest du unter: 
 https://docs.arduino.cc/tutorials/uno-r4-wifi/led-matrix/#frame-gallery
