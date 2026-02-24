@@ -2,16 +2,17 @@
 
 ![](<../UNO_R4_WiFi_Connect_Analog_Empfaenger/demo_connect_analog.avif>)
 
-für diese Beispiel brauchst du Zwei Arduino UNO R4 WiFi.
-einer wird der `Sender`, der zweite der `Empfänger`.
+Für dieses Beispiel brauchst du zwei Arduino UNO R4 WiFi.
+Einer wird der `Sender`, der zweite der `Empfänger`.
 
-es gibt auch je ein dazugehöriges Beispiel-Sketch dafür.
+Es gibt jeweils einen passenden Beispiel-Sketch dafür.
 
-- schließe einen Dreh-Regler an A0 (z.B. über das Grove-Shield) an.
-- lade den Sketch hoch
-- wenn du den Regler veränderst sendet der Arduino diese info an den anderen Arduino.
+- Schließe einen Dreh-Regler an A0 (z.B. über das Grove-Shield) an.
+- Lade den Sketch hoch.
+- Wenn du den Regler veränderst, sendet der Arduino diese Information an den anderen Arduino.
 
 
-## weitere Informationen
+## Weitere Informationen
 
-findest du unter https://docs.arduino.cc/tutorials/uno-r4-wifi/wifi-examples/
+Findest du unter:
+https://docs.arduino.cc/tutorials/uno-r4-wifi/wifi-examples/
