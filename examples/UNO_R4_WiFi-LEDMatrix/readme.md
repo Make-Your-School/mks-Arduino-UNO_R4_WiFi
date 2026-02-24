@@ -2,17 +2,16 @@
 
 ![bild der animation](<20260203_113029 OP.jpg>)
 
-du benötigst keine externen Bauteile.
+Du benötigst keine externen Bauteile.
 
-lade einfach den Sketch hoch.
-dann sollte die LED Matrix eine Animation anzeigen.
+- Lade einfach den Sketch hoch.
+- Dann sollte die LED-Matrix eine Animation anzeigen.
 
 ## Aufgabe
 
-### ändere die Animation
-
-alle möglichen vordefinierten Animationen findest du unter
-https://docs.arduino.cc/tutorials/uno-r4-wifi/led-matrix/#frame-gallery
+- Ändere die Animation.
+- Viele verschiedene vordefinierte Animationen findest du unter:
+  https://docs.arduino.cc/tutorials/uno-r4-wifi/led-matrix/#frame-gallery
 
 - `LEDMATRIX_ANIMATION_STARTUP`
 - `LEDMATRIX_ANIMATION_TETRIS_INTRO`
@@ -40,5 +39,5 @@ https://docs.arduino.cc/tutorials/uno-r4-wifi/led-matrix/#frame-gallery
 - `LEDMATRIX_ANIMATION_TETRIS`
 - `LEDMATRIX_ANIMATION_WIFI_SEARCH`
 
-suche dir eine aus und ändere den sketch entsprechend ab.
-probiere die verschiedenen Animationen aus.
+- Probiere die verschiedenen Animationen aus und suche dir eine aus.
+- Ändere den Sketch entsprechend ab.
