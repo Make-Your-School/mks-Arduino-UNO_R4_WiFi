@@ -2,23 +2,24 @@
 
 ![](./demo_connect.avif)
 
-für diese Beispiel brauchst du Zwei Arduino UNO R4 WiFi.
-einer wird der `Sender`, der zweite der `Empfänger`.
+Für dieses Beispiel brauchst du zwei Arduino UNO R4 WiFi.
+Einer wird der `Sender`, der zweite der `Empfänger`.
 
-es gibt auch je ein dazugehöriges Beispiel-Sketch dafür.
+Es gibt jeweils einen passenden Beispiel-Sketch dafür.
 
 > [!info]
 > Sketch für Empfänger
 
-du benötigst keine externen Bauteile.
+Du benötigst keine externen Bauteile.
 
-- lade den Sketch hoch
-- wenn der Sender eine Info sended wird die On-Board LED entsprechend an oder aus geschaltet.
+- Lade den Sketch hoch.
+- Wenn der Sender eine Info sendet, wird die On-Board-LED entsprechend ein- oder ausgeschaltet.
 
 ## Aufgabe
 
-passe den Sketch so an das ein empfangener Analog-Wert als Helligkeit auf der LED angezeigt wird.
+Passe den Sketch so an, dass ein empfangener Analogwert als Helligkeit auf der LED angezeigt wird.
 
-## weitere Informationen
+## Weitere Informationen
 
-findest du unter https://docs.arduino.cc/tutorials/uno-r4-wifi/wifi-examples/
+Findest du unter: 
+https://docs.arduino.cc/tutorials/uno-r4-wifi/wifi-examples/
