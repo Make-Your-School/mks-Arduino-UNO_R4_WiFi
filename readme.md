@@ -3,13 +3,13 @@ title: 'Arduino UNO R4 WiFi'
 date: '2025-11-23T23:38:00.000Z'
 tags:
     - 'controller'
-coverImage: '1_Arduino_R4_Wifi.png'
+coverImage: '1_Arduino_R4_Wifi.avif'
 material_number: '1'
 material_type: 'controller'
 material_short_descr: 'Arduino UNO R4 WiFi'
 manufacture: 'Arduino'
 manufacture_url: 'https://arduino.cc/'
-repo_name: 'mks-Arduino-UNO_R4_WiFi'
+repo_name: 'Arduino-UNO_R4_WiFi'
 repo_prefix: 'mks'
 repo_manufacture: 'Arduino'
 repo_part: 'UNO_R4_WiFi'
@@ -22,7 +22,7 @@ difficulty: 'recommend'
 
 # Arduino UNO R4 WiFi
 
-![Arduino UNO R4 WiFi](./1_Arduino_R4_Wifi.png)
+![Arduino UNO R4 WiFi](./1_Arduino_R4_Wifi.avif)
 
 ## Beschreibung
 
